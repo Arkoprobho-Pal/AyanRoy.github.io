@@ -16,7 +16,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: Verdana,'Lato', sans-serif;
     font-weight: 300;
     color: #444;
 }
@@ -46,7 +46,7 @@ p {
 it should always be at the center of the browser */
 .wrapper {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%,0%);
  width: 550px;
