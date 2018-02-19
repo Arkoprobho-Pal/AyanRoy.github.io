@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Architect-Ayan Roy</title>
 
@@ -13,11 +13,9 @@
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/animations.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    
+	
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- siimple style -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -28,95 +26,35 @@
     <![endif]-->
 </head>
 
-<body>
-
-    
+<body style="color:red;font-family:Verdana;">
 
 
-    <div id="wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <img src="assets/img/ayan.jpg" style="border-radius:50%;height:20;width:20;">
-                    <br/>
-                    <br/>
+
+	
+		<div class="wrapper">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+                    
+                    <img src="assets/img/ayan.jpg" style=";height:100%;width:100%;">
                     <h1>Ayan Roy</h1>
-                    </br></br>
-                    <h2 class="subtitle"> we'll be ready very soon</h2>
-                    <br/>
-             
-                   
-                    <br/>
-                </div>
-                <div class="col-sm-12 align-center">
-                    <ul class="social-network social-circle">
-                        <li><a href="https://www.facebook.com/IamAyan57" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="https://twitter.com/IamAyan57" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/ayan-roy-42780b41/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/iamayan57/" class="icoTwitter" title="Instagram"><i class="fa fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-                  <!--  <p class="copyright">Copyright &copy; 2018 - <a href="http://ayanroy.in">ayanroy.in</a> -->
-                    </p>
-                </div>
-            </div>
+                    
+                    <h2 class="subtitle">This Page is Under Construction!</h2>
+                    
         </div>
-    </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://downloads.mailchimp.com/js/jquery.form-n-validate.js"></script>
-    
-<script>
+	  <ul>
+		<li class="facebook"><a href="https://www.facebook.com/IamAyan57"> <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+		<li class="twitter"><a href="https://twitter.com/IamAyan57" ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+		<li class="instagram"><a href="https://www.instagram.com/iamayan57/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+		<li class="linkedin"><a href="https://www.linkedin.com/in/ayan-roy-42780b41/" ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+		<li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=918981737695"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+	  </ul>
+</div>
+	
+	
+	
+	
         
-$(document).ready( function () {
-    $('#wrapper').height($(document).height());
-    // I only have one form on the page but you can be more specific if need be.
-    var $form = $('form');
-
-    if ( $form.length > 0 ) {
-        $('form input[type="submit"]').bind('click', function ( event ) {
-            if ( event ) event.preventDefault();
-            // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
-            if ( $form.validate() ) { register($form); }
-        });
-    }
-});
-
-function appendResult(userText , className, iconClass){
-  var resultHTML = "<div class='stretchLeft result "+ className + "'>" + userText + " <span class='fa fa-" + iconClass + "'></span>" + "</div>";
-  $('body').append(resultHTML);
-  $('.result').delay(10000).fadeOut('1000');
-}
 
 
-function register($form) {
-    $.ajax({
-        type: $form.attr('method'),
-        url: $form.attr('action'),
-        data: $form.serialize(),
-        cache       : false,
-        dataType    : 'json',
-        contentType: "application/json; charset=utf-8",
-        error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
-        success     : function(data) {
-            if (data.result != "success") {
-                appendResult('Wrong Email Or You Are Already Registered, Try Again', 'error', 'exclamation');
-            } else {
-                // It worked, carry on...
-                appendResult('Successful, Check Your Email For Confirmation ', 'success', 'check');
-            }
-        }
-    });
-}
-    </script>
 </body>
 
 </html>
