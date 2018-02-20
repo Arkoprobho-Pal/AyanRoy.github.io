@@ -11,4 +11,22 @@ body {
 	
 }
 
+@media (max-width: 400px) {
+    body {
+       background-image: url("../window2.jpg");
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url("../window2.jpg");
+		
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url("../window2.jpg");
+    }
+}
 
