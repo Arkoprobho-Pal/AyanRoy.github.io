@@ -5,7 +5,8 @@
   padding: 0;
 }
 body {
-	background: white;
+	background-image: url("../img/window.jpg");
+	
     font-family: Verdana,'Lato', sans-serif;
     font-weight: 300;
     font-size: 16px;
