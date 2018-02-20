@@ -1,9 +1,4 @@
-/* ==== Google font ==== */
-@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
-* {
-  margin: 0;
-  padding: 0;
-}
+
 body {
 	background-image: url("../window.jpg");
 	/* Full height */
@@ -12,7 +7,7 @@ body {
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 	
 }
 
